@@ -24,35 +24,35 @@ run_step () {
   local file="$1"
 
   case "$file" in
-    01_cuda_info.py)
+    cuda_info.py)
       echo -e "${CYAN}🧠 Checking CUDA + NVIDIA driver vibes...${RESET}"
       python3 "$file"
       ;;
-    02_gpu_info.sh)
+    gpu_info.sh)
       echo -e "${CYAN}🎮 Inspecting GPU hardware stats...${RESET}"
       bash "$file"
       ;;
-    03_torch_info.py)
+    torch_info.py)
       echo -e "${CYAN}🔥 Verifying PyTorch + CUDA integration...${RESET}"
       python3 "$file"
       ;;
-    04_disk_info.sh)
+    disk_info.sh)
       echo -e "${CYAN}💾 Looking at disks and mount points...${RESET}"
       bash "$file"
       ;;
-    05_filesystem_speed.sh)
+    filesystem_speed.sh)
       echo -e "${CYAN}🚀 Testing filesystem read/write speed...${RESET}"
       bash "$file"
       ;;
-    06_disk_speed.sh)
+    disk_speed.sh)
       echo -e "${CYAN}⚡ Benchmarking raw disk speed...${RESET}"
       bash "$file"
       ;;
-    07_cpu_info.sh)
+    cpu_info.sh)
       echo -e "${CYAN}🧮 Gathering CPU core + thread intel...${RESET}"
       bash "$file"
       ;;
-    08_amp_test.py)
+    amp_test.py)
       echo -e "${CYAN}✨ Testing AMP (mixed precision) goodness...${RESET}"
       python3 "$file"
       ;;
