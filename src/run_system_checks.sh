@@ -40,18 +40,18 @@ run_step () {
       echo -e "${CYAN}💾 Looking at disks and mount points...${RESET}"
       bash "$file"
       ;;
-    filesystem_speed.sh)
-      echo -e "${CYAN}🚀 Testing filesystem read/write speed...${RESET}"
-      bash "$file"
-      ;;
-    disk_speed.sh)
-      echo -e "${CYAN}⚡ Benchmarking raw disk speed...${RESET}"
-      bash "$file"
-      ;;
-    cpu_info.sh)
-      echo -e "${CYAN}🧮 Gathering CPU core + thread intel...${RESET}"
-      bash "$file"
-      ;;
+    # filesystem_speed.sh)
+    #   echo -e "${CYAN}🚀 Testing filesystem read/write speed...${RESET}"
+    #   bash "$file"
+    #   ;;
+    # disk_speed.sh)
+    #   echo -e "${CYAN}⚡️ Benchmarking raw disk speed...${RESET}"
+    #   bash "$file"
+    #   ;;
+    # cpu_info.sh)
+    #   echo -e "${CYAN}🧮 Gathering CPU core + thread intel...${RESET}"
+    #   bash "$file"
+    #   ;;
     amp_test.py)
       echo -e "${CYAN}✨ Testing AMP (mixed precision) goodness...${RESET}"
       python3 "$file"
@@ -78,9 +78,9 @@ FILES=(
   gpu_info.sh
   torch_info.py
   disk_info.sh
-  filesystem_speed.sh
-  disk_speed.sh
-  cpu_info.sh
+  # filesystem_speed.sh
+  # disk_speed.sh
+  # cpu_info.sh
   amp_test.py
   system_info.py
 )
