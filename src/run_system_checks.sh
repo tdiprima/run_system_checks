@@ -74,14 +74,14 @@ run_step () {
 banner "🐻 Bear's System & GPU Vibe Check 🐻"
 
 FILES=(
-  01_cuda_info.py
-  02_gpu_info.sh
-  03_torch_info.py
-  04_disk_info.sh
-  05_filesystem_speed.sh
-  06_disk_speed.sh
-  07_cpu_info.sh
-  08_amp_test.py
+  cuda_info.py
+  gpu_info.sh
+  torch_info.py
+  disk_info.sh
+  filesystem_speed.sh
+  disk_speed.sh
+  cpu_info.sh
+  amp_test.py
   system_info.py
 )
 
