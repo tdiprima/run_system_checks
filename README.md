@@ -1,6 +1,6 @@
 # System Checks
 
-Quick diagnostics for your machine's GPU, CUDA, PyTorch, CPU, and disk performance.
+I got tired of jumping between Stack Overflow tabs, `nvidia-smi` man pages, and half-remembered PyTorch commands every time I set up a new machine or debugged a training run. So I wrote this — a single script that tells me everything I need to know about my GPU, CUDA, PyTorch, CPU, and disk performance, before I waste an hour wondering why things are slow or broken.
 
 ## Usage
 
@@ -9,9 +9,9 @@ cd src
 ./run_system_checks.sh
 ```
 
-This will run through all the checks and give you a comprehensive overview of your system capabilities.
+This will run through all the checks and give you a comprehensive overview of system capabilities.
 
----
+## What's up with disk\_speed and filesystem\_speed?
 
 Yes, they are completely different:
 
@@ -32,7 +32,7 @@ Yes, they are completely different:
 - No additional tools needed (dd is built-in)
 - Cleans up the test file when done
 
-**The main differences:**
+### The main differences:
 
 1. Different tools (`fio` vs `dd`)
 2. Different scope (read-only vs read+write)
